@@ -68,3 +68,11 @@ bash
 Copier
 Modifier
 npm install @react-three/gltfjsx
+
+
+Tu peux trouver des modèles gratuits sur :
+
+Sketchfab
+Poly Haven
+Quixel Bridge
+Three.js Editor

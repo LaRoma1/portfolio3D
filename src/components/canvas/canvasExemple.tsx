@@ -1,32 +1,30 @@
 import React from 'react';
 import { Canvas } from '@react-three/fiber';
-import {   OrbitControls } from '@react-three/drei';
-const Box = () => (
-    <mesh >
-      <boxGeometry args={[1, 1, 1]} />
-      <meshStandardMaterial color="royalblue" />
-    </mesh>
-  );
+import { OrbitControls, PerspectiveCamera } from '@react-three/drei';
+import Chess from './worlds/chess';
+
 const CanvasExemple = () => {
   return (
-    <div style={{ height: '100vh', width:'200vh' }}>
-      <Canvas >
-        {/* La scène 3D */}
-        <ambientLight intensity={0.9} />
-        <directionalLight position={[10, 10, 10]} intensity={14} />
-        {/* Les objets 3D */}
-        <Box  />
-        <mesh position={[2, 4, -5]}>
-          <boxGeometry args={[2, 7, 2]} />
-          <meshStandardMaterial color="green"  />
-        </mesh>
-        <mesh position={[2, 4, 5]}>
-          <boxGeometry args={[2, 7, 2]} />
-          <meshStandardMaterial color="green"  />
-        </mesh>
-        {/* Les contrôles de la caméra */}
+    <div style={{ height: '100vh', width: '100vw' }}>
+
+<Canvas>
+        <ambientLight intensity={3.5} />
+        <directionalLight position={[5, 1, 1]} />
+        <Chess />
         <OrbitControls />
       </Canvas>
+      {/* <Canvas
+        camera={{ position: [5, 5, 5], fov: 45 }}
+        shadows
+      >
+        <color attach="background" args={['#f0f0f0']} />
+        <Chess />
+        <OrbitControls 
+          enablePan={true}
+          enableZoom={true}
+          enableRotate={true}
+        />
+      </Canvas> */}
     </div>
   );
 };

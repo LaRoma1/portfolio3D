@@ -1,0 +1,14 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+- Use pre-built helpers like Html for DOM integration
+- Implement effects like Bloom and Glitch for enhanced visuals
+- Utilize loaders for common 3D formats
+- Optimize performance with components like AdaptiveDpr
+
+- Use the Canvas component as the root of your 3D scene
+- Optimize performance with useFrame for animations
+- Leverage suspense for loading 3D models
+- Use the provided hooks like useThree and useLoader for easier integration

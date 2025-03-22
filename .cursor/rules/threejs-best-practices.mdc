@@ -1,0 +1,9 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+- Use Three.js classes directly when needed for low-level control
+- Optimize geometry and materials for performance
+- Implement proper scene management and object disposal
+- Utilize Three.js loaders for various asset types

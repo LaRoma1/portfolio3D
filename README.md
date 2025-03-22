@@ -58,3 +58,21 @@ npm install -D @types/three
 
 # Démarrer le serveur de développement
 npm run dev
+
+
+ 1. Installer gltfjsx (Facultatif mais recommandé)
+Pour importer facilement un modèle .glb, on peut utiliser gltfjsx. Il transforme un fichier .glb en un composant React.
+Exécute cette commande dans ton terminal :
+
+bash
+Copier
+Modifier
+npm install @react-three/gltfjsx
+
+
+Tu peux trouver des modèles gratuits sur :
+
+Sketchfab
+Poly Haven
+Quixel Bridge
+Three.js Editor
